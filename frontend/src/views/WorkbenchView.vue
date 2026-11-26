@@ -12,6 +12,14 @@
         <button class="btn" data-testid="export" type="button" @click="exportRows">
           导出{{ meta.name }}清单
         </button>
+        <RouterLink
+          v-if="meta.key === 'downsample'"
+          class="btn primary"
+          data-testid="open-credential"
+          to="/downsample/credential/DOWN-CRED-01"
+        >
+          采样凭据包
+        </RouterLink>
       </div>
     </header>
 
